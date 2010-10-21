@@ -1,0 +1,7 @@
+Each file is named with the tutorial part they appear in, followed by a dot and
+the order they appear.
+
+For example: part 2's third example is 2.3_reping_tags.c
+
+To compile everything, just run
+$ make
