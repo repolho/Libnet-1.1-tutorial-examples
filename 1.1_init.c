@@ -7,7 +7,7 @@
 
 int main() {
 
-	libnet_t *l;	// the libnet context
+	libnet_t *l;	/* the libnet context */
 	char errbuf[LIBNET_ERRBUF_SIZE];
 
 	l = libnet_init(LIBNET_RAW4, NULL, errbuf);

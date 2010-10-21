@@ -45,11 +45,9 @@ int main() {
 
 void frag_and_send(u_int8_t *payload, u_int32_t total_pload_size) {
 
-	/*
-	 * Builds and sends the first packet, calling get_sum() to get the 
+	/* Builds and sends the first packet, calling get_sum() to get the 
 	 * correct checksum for the ICMP packet (with the whole payload). Then 
-	 * builds and sends IP fragments until all the payload is sent.
-	 */
+	 * builds and sends IP fragments until all the payload is sent. */
 
 	char ip_addr_str[16];
 	u_int32_t ip_addr, src_addr;
@@ -99,11 +97,9 @@ void frag_and_send(u_int8_t *payload, u_int32_t total_pload_size) {
 
 	/* Building the first packet, which carries the ICMP header */
 	
-	/* 
-	 * We're doing (payload size - icmp header size) and not
+	/* We're doing (payload size - icmp header size) and not
 	 * checking if it's a multiple of 8 because we know the header is 8 
-	 * bytes long
-	 */
+	 * bytes long */
 	if ( total_pload_size > (max_pload_size - LIBNET_ICMPV4_ECHO_H) ) {
 		hdr_offset = IP_MF;
 		packet_pload_size = max_pload_size - LIBNET_ICMPV4_ECHO_H;
@@ -149,11 +145,9 @@ void frag_and_send(u_int8_t *payload, u_int32_t total_pload_size) {
 	/* Updating the offset */
 	pload_offset += packet_pload_size;
 
-	/* Clearing 
-	 *
-	 * We need to get rid of the ICMP header to build the other
-	 * fragments
-	 */
+	/* Clearing */
+	/* We need to get rid of the ICMP header to build the other
+	 * fragments */
 	libnet_clear_packet(l);
 
 	ip_tag = LIBNET_PTAG_INITIALIZER;
@@ -209,10 +203,8 @@ void frag_and_send(u_int8_t *payload, u_int32_t total_pload_size) {
 u_int16_t get_sum(u_int8_t *payload, u_int32_t total_pload_size, \
 		u_int16_t id, u_int16_t seq) {
 
-	/*
-	 * Builds the ICMP header with the whole payload, gets the checksum from
-	 * it and returns it (in host order).
-	 */
+	/* Builds the ICMP header with the whole payload, gets the checksum from
+	 * it and returns it (in host order). */
 
 	char errbuf[LIBNET_ERRBUF_SIZE];
 	libnet_ptag_t icmp_tag;

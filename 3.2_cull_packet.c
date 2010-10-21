@@ -8,10 +8,8 @@
 
 int main() {
 
-	/* 
-	 * Builds an ARP request, then pulls it from libnet, changes the target
-	 * IP address and writes it.
-	 */
+	/* Builds an ARP request, then pulls it from libnet, changes the target
+	 * IP address and writes it. */
 
 	libnet_t *l;
 	char errbuf[LIBNET_ERRBUF_SIZE], target_ip_addr_str[16];

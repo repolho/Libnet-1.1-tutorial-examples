@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv) {
 
-	libnet_t *l;	// the libnet context
+	libnet_t *l;	/* the libnet context */
 	char errbuf[LIBNET_ERRBUF_SIZE];
 
 	if ( argc == 1 ) {

@@ -8,7 +8,7 @@
 
 int main() {
 
-	libnet_t *l;	// libnet context
+	libnet_t *l;	/* libnet context */
 	char errbuf[LIBNET_ERRBUF_SIZE];
 	u_int32_t ip_addr;
 	struct libnet_ether_addr *mac_addr;
