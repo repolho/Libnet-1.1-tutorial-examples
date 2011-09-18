@@ -11,7 +11,7 @@ int main() {
 	char errbuf[LIBNET_ERRBUF_SIZE];
 
 	l = libnet_init(LIBNET_RAW4, NULL, errbuf);
-        if ( l == NULL ) {
+	if ( l == NULL ) {
 		fprintf(stderr, "libnet_init() failed: %s\n", errbuf);
 		exit(EXIT_FAILURE);
 	}

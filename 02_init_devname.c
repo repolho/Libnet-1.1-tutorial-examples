@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
 	}
 
 	l = libnet_init(LIBNET_RAW4, argv[1], errbuf);
-        if ( l == NULL ) {
+	if ( l == NULL ) {
 		fprintf(stderr, "libnet_init() failed: %s\n", errbuf);
 		exit(EXIT_FAILURE);
 	}
