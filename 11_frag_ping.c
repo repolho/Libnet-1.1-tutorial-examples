@@ -1,5 +1,5 @@
-/* libnet 1.1 tutorial (http://repura.livejournal.com/31673.html) sample code
- * Part 3 - example 3: frag_ping.c */
+/* libnet 1.1 tutorial (https://repolinux.wordpress.com/category/libnet/) sample code
+ * Example 11: frag_ping.c */
 
 #include <stdio.h>
 #include <stdlib.h>

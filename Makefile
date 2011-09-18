@@ -1,7 +1,7 @@
 LDFLAGS = `libnet-config --libs`
 CFLAGS = -ggdb -Wall `libnet-config --defines`
 
-OBJECTS = 1.1_init 1.2_init_devname 1.3_addr 1.4_get_own_addr 2.1_ping 2.2_arp 2.3_reping_tags 2.4_reping_clear 3.1_cull_header 3.2_cull_packet 3.3_frag_ping
+OBJECTS = 01_init 02_init_devname 03_addr 04_get_own_addr 05_ping 06_arp 07_reping_tags 08_reping_clear 09_cull_header 10_cull_packet 11_frag_ping
 
 all : $(OBJECTS)
 clean :

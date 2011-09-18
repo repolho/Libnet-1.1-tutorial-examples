@@ -1,5 +1,5 @@
-/* libnet 1.1 tutorial (http://repura.livejournal.com/31673.html) sample code
- * Part 1 - example 1: init.c */
+/* libnet 1.1 tutorial (https://repolinux.wordpress.com/category/libnet/) sample code
+ * Example 1: init.c */
 
 #include <stdio.h>
 #include <stdlib.h>

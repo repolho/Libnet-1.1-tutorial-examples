@@ -1,5 +1,5 @@
-/* libnet 1.1 tutorial (http://repura.livejournal.com/31673.html) sample code
- * Part 2 - example 3: reping_tags.c */
+/* libnet 1.1 tutorial (https://repolinux.wordpress.com/category/libnet/) sample code
+ * Example 7: reping_tags.c */
 
 #include <stdio.h>
 #include <stdlib.h>

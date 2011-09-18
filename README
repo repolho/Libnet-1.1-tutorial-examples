@@ -1,9 +1,6 @@
-libnet 1.1 tutorial (http://repura.livejournal.com/31673.html) sample code
+libnet 1.1 tutorial (https://repolinux.wordpress.com/category/libnet/) sample code
 
-Each file is named with the tutorial part they appear in, followed by a dot and
-the order they appear.
-
-For example: part 2's third example is 2.3_reping_tags.c
+File names are preceded by the order they appear in the tutorial.
 
 To compile everything, just run
 $ make

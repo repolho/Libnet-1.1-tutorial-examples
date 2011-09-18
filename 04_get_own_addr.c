@@ -1,5 +1,5 @@
-/* libnet 1.1 tutorial (http://repura.livejournal.com/31673.html) sample code
- * Part 1 - example 4: get_own_addr.c */
+/* libnet 1.1 tutorial (https://repolinux.wordpress.com/category/libnet/) sample code
+ * Example 4: get_own_addr.c */
 
 #include <stdio.h>
 #include <stdlib.h>
