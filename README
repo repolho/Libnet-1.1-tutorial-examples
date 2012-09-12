@@ -5,4 +5,4 @@ File names are preceded by the order they appear in the tutorial.
 To compile everything, just run
 $ make
 
-Notice that example 13 will fail to compile if your libnet install lacks libnet_build_icmpv6_echo() and libnet_autobuild_ipv6(). They are available for unix platforms only at (https://github.com/repolho/libnet).
+Notice that example 13 will fail to compile if your libnet version lacks libnet_build_icmpv6_echo() and libnet_autobuild_ipv6(). They are available starting from libnet-1.1.6 (https://github.com/sam-github/libnet/tree/master/libnet).
